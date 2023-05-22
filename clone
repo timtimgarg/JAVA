@@ -1,0 +1,19 @@
+class CloneTest1{
+	int i=10;
+	}
+
+	public class CloneDemo1 implements Cloneable {
+		int j=20;
+		CloneTest1 ob = new CloneTest1();
+		public static void main(String[]args) throws CloneNotSupportedException
+		{
+	    CloneDemo1 c1=new CloneDemo1();
+		CloneDemo1 c2= (CloneDemo1)c1.clone();
+		System.out.println("Program of Shallow Demo");
+		System.out.println("Original Object value"+c1.ob.i+" "+c1.j);
+		System.out.println("Clone Object Value"+c2.ob.i+" "+c2.j);
+		c2.ob.i=11;
+		c2.j=21;
+		System.out.println("Cloned Object Value"+c2.ob.i+" "+c2.j);
+		}
+	}  
