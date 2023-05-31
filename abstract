@@ -1,0 +1,32 @@
+package demo;
+
+ class abstractclass {
+	 public static void mainbc(String args[])
+	 {
+		 bike obj=new Honda();
+		
+			obj.run();
+			obj.change();
+		
+}
+}
+abstract class bike {
+bike() {
+	System.out.println("It is a abstract class");
+}
+void change() {
+	System.out.println("gear changed");
+}
+abstract void run();
+
+{
+	System.out.println("My bike is running.");
+}
+}
+class Honda extends bike {
+void run() {
+
+	System.out.println("We are running safely with bike.");
+}
+}
+	
