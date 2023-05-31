@@ -1,0 +1,39 @@
+package demo;
+interface demo1{
+	void print();
+}
+interface showable
+{
+	void show ();
+}
+
+  class join implements demo1,showable
+{
+public 	void show() {
+		System.out.println("Hi democlass1");
+	}
+	public void demo_run()
+	{
+		System.out.println("Hi democlass2");
+	}
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+		
+	}
+
+
+public class MultipleInheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+join obj=new join();
+obj.show();
+obj.demo_run();
+
+	}
+
+}
